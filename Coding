@@ -1,0 +1,42 @@
+package Question1;
+import java.util.Scanner;
+public class Question1 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner (System.in);
+		double salary=0;
+		double bonus=0;
+		int year = 0;
+					
+		System.out.println("Employee ");
+		System.out.print("Year of service: ");
+		year = sc.nextInt();
+		System.out.print("Enter salary: ");
+		salary = sc.nextDouble();
+		System.out.println();
+		
+		double monthSalary = salary/12;
+		System.out.println();
+	
+		if (year > 5) {
+			bonus += monthSalary *0.05;
+			System.out.println("Your bonus: " + bonus);
+		}
+		
+		else if (year < 5){
+			System.out.println("Your bonus: " + monthSalary);
+		}		
+		
+		double hS = monthSalary + bonus;
+		double lS = monthSalary;
+		System.out.println("Your highest salary: " +hS);
+		System.out.println("Your lowest salary: "+lS);
+	}
+	
+	
+	
+
+			
+}
