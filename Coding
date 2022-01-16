@@ -26,7 +26,7 @@ public class Question1 {
 		}
 		
 		else if (year < 5){
-			System.out.println("Your bonus: " + monthSalary);
+			System.out.println("Your bonus = 0");
 		}		
 		
 		double hS = monthSalary + bonus;
