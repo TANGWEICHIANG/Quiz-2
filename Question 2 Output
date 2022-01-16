@@ -1,0 +1,7 @@
+Enter number of items: 5
+the value of all items (Seperated by space): 7 4 3 0 7
+0:*******(7)
+1:****(4)
+2:***(3)
+3:(0)
+4:*******(7)
