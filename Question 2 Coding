@@ -1,0 +1,30 @@
+package Question1;
+import java.util.Scanner;
+public class Question2 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner (System.in);
+		
+		System.out.print("Enter number of items: ");
+		int NUM_ITEMS = sc.nextInt();
+		
+		System.out.print("the value of all items (Seperated by space): ");
+		int items [] = new int[NUM_ITEMS];
+		
+		for(int a=0; a<items.length; a++) {
+			items[a] = sc.nextInt();
+		}
+		
+		for(int a = 0; a < NUM_ITEMS; a++){
+			System.out.print(a + ":");
+			for(int c = 0; c < items[a]; c++){
+				System.out.print("*");
+			}
+			System.out.print("(" +items[a] + ")");
+			System.out.println();
+		
+		}
+}
+}
